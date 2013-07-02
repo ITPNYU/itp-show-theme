@@ -1,62 +1,61 @@
-
 <div class="post" id="post-<?php the_ID(); ?>">
-		<?
-			$students = get_post_parent_category_children('Students', $postCategories); //list the categories that are children of Students
-			$instructors = get_post_parent_category_children('Instructors', $postCategories); //project instructors
-			$classes = get_post_parent_category_children('Related Classes', $postCategories); // project classes
-		?>
-		<div class="projectMeta">
-<!-- 		<img src="<?php bloginfo('template_directory'); ?>/topImg.jpg" /> -->
-			<h3 class="projectAuthor">
-			<?
-				if (isset($students)) {
-					foreach($students as $s) {
-						echo $s->name . "<br>";
-						
-					}
-				}
-			?>
-			</h3>
-	
-			<h3 class="projectTitle"><?php the_title(); ?></h3>
-	
+	<?
+		$student_category_id = get_cat_ID('Students');
+		$instructors_id = get_cat_ID('Instructors');
+		$classes_id = get_cat_ID('Related Classes');
+		$categories = get_the_category();
+	?>
+
+	<h2 class="project-title"><?php the_title(); ?></h2>
+	<h3 class="project-author">
+	<?
+		foreach($categories as $category) {
+			if($category->parent == $student_category_id) {
+				echo $category->name . "<br>";
+			}
+		}
+	?>
+	</h3>
+
+
+	<div class="project-content"><?php the_content(); ?></div>
+
+
 			<h3 class="projectPitch">
 			<?=   stripslashes(getProjectMeta('pitch')) ?>
 			</h3>
-						
+
 			<h3 class="projectURL">
 			<a href="<?= getProjectMeta('externalURL');?> "><?= getProjectMeta('externalURL');?></a>
 			</h3>
-			
+
 			<div>
 				<div id="projectImage">
 					<? if (getProjectMeta('image')) { ?>
 					<img src="<?= getProjectMeta('image'); ?>" />
 					<? } ?>
 				</div>
-				
-				<div id="meta_right">
 
-					
+				<div id="meta_right">
 						<div id="classes">
 							<b>Classes</b>
 							<br>
-							<? 
+							<?
 							foreach($classes as $class) {
-								$theClasses[] = $class->name;			
+								$theClasses[] = $class->name;
 							}
-							
+
 							echo implode(",",$theClasses);
 							?>
-						
+
 						</div>
-					
-					
+
+
 					<br><br>
 						<?
 							$keywords = stripslashes(getProjectMeta('keywords'));
 							if (!empty($keywords)) {
-							
+
 						?>
 							<div id="keywords">
 								<b>Keywords</b>
@@ -67,16 +66,14 @@
 				</div>
 			</div>
 		</div>
-		
-		
-		
-		<div style="clear:both;"></div>
-		<div class="storycontent">	
-		<!--<div class="entry">-->
-		
+
+
+
+		<div class="storycontent">
+
 			<?
-			echo stripslashes($post->post_content); 
-			
+			echo stripslashes($post->post_content);
+
 			       	$extra_meta = array(
                                 "personal-statement" => "Personal Statement",
                                 "background" => "Background",
@@ -86,7 +83,7 @@
                                 "conclusion" => "Conclusion",
                                 "project-references" => "References"
                               );
-			
+
 			foreach ($extra_meta as $extra  => $emTitle) {
 				$em = getProjectMeta($extra);
 				if ($em) {
@@ -94,10 +91,7 @@
 					echo stripslashes($em);
 				}
 			}
-			
-			
-			
-			
+
 			?>
 
 		</div>

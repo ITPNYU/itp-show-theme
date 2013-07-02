@@ -1,9 +1,8 @@
 <?php get_header(); ?>
-
 <?php get_sidebar(); ?>
 
 <div id="content">
-	<img src="<?php header_image(); ?>" alt="itp show banner image"/>
+	<img id="banner-image" src="<?php echo get_option('show_banner_image') ?>" alt="ITP Show Banner Image" />
 	<h2><?php echo get_option('show_time'); ?></h2>
 
 	<?php if (have_posts()) : ?>
@@ -28,8 +27,6 @@
 
 	<?php
 		while (have_posts()) : the_post();
-			setup_postdata($post);
-
 			$student_category_id = get_cat_ID('Students');
 			$instructors_id = get_cat_id('Instructors');
 			$classes_id = get_cat_id('Related Classes');

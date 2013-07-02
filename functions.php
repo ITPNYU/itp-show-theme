@@ -24,6 +24,7 @@
     ));
 
     $wp_customize->add_setting('show_postcard', array('type' => 'option'));
+    $wp_customize->add_setting('show_banner_image', array('type' => 'option'));
 
     // Controls for settings
 
@@ -43,6 +44,12 @@
         'label'      => __( 'Postcard Image', 'itpshow' ),
         'section'    => 'itpshow',
         'settings'   => 'show_postcard',
+    )));
+
+    $wp_customize->add_control(new WP_Customize_Upload_Control($wp_customize, 'banner_image', array(
+        'label'      => __( 'Banner Image', 'itpshow' ),
+        'section'    => 'itpshow',
+        'settings'   => 'show_banner_image',
     )));
   }
   add_action('customize_register', 'itpshow_customize');

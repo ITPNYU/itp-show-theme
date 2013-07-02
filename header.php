@@ -30,12 +30,5 @@
 	<?php //TODO include 'includes/top-bar.php'; ?>
 	</div>
 
-<div class="header">
-	<div class="header1"></div>
-	<div class="header2">
-		<br>
-	</div>
-</div>
-
 <!-- end header -->
 

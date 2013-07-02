@@ -1,6 +1,4 @@
-<!-- there are template files for blog entries that are projects and for posts -->
 <?php get_header();?>
-
 <?php get_sidebar(); ?>
 
 <div id="content">
@@ -14,6 +12,4 @@
   </div>
 </div>
 
-
 <?php get_footer(); ?>
-

@@ -717,9 +717,23 @@ table tr#headerrow a:hover {
 
 
 
-#postcard-image {
+#postcard-image,
+#banner-image {
 	margin: 0;
 	max-width: 100%;
 	padding: 0;
 	position: relative;
+}
+
+h2.project-title {
+	font-size: 2em;
+	line-height: 1.5em;
+	text-transform: none;
+}
+
+h3.project-author {
+	font-size: 1.2em;
+	font-weight: normal;
+	line-height: 1.5em;
+	text-transform: none;
 }

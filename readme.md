@@ -11,3 +11,8 @@ todo:
 - clean up/reduce css
 - make responsive
 - allow customization of colors from theme settings
+
+
+## Installation
+
+- Set the number of posts to display to a large number, like 500.

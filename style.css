@@ -1,0 +1,725 @@
+/*
+Theme Name: ITP Show Theme
+Theme URI: http://wordpress.org/
+Description: ITPSHOW, ( ITP Spring Show)  works with Projects DB, created for plugin development
+Author: Residents & John Schimmel & Steve Klise
+Author URI: http://github.com/itpresidents
+*/
+
+#container {
+	width:100%;
+	padding: 0;
+	text-align: left;
+}
+
+#header {
+	width:740px;
+	margin-left:165px;
+
+}
+
+#sidebar {
+	float:left;
+	position:absolute;
+	top: 100px;
+	left: 8px;
+	width: 125px;
+	color: black;
+	font-size: 10px;
+	margin: 0;
+	padding: 0 0 0 0;
+	overflow: hidden;
+}
+
+#content
+{
+	margin-left: 150px;
+	font-size: 13px;
+}
+#content .dates { font-weight:bold; }
+#content .external { margin-top: 2em; }
+
+#column2 { /*main column on rightn*/
+	width: 240px;
+	/* float: right; */
+	height:100%;
+	padding-right: 20px;
+}
+
+
+#column1{ /*main column on left with the entries*/
+	font-size: 11px;
+	padding-right:25px;
+	height:100%;
+}
+
+#column1inner{ /*main column on left with the entries*/
+
+	height:100%;
+	padding: 20px 20px 20px 20px;
+}
+
+.navigation { /* NEXT/PREV links at the bottom */
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0px 0px 8px 0px;
+	margin: 0;
+}
+
+.navigation_single { /* NEXT/PREV links at top of single page */
+	font-size: 11px;
+	padding: 0px 0px 8px 0px;
+	margin: 0;
+}
+
+#navdropdown { /*this places the ITP header in place */
+	height: 25px;
+	margin: 0;
+	float:right;
+	width: 250px;
+	/*padding-right: 20px;	*/
+
+}
+
+
+#menu {
+	/*width: 185px;*/
+	margin-top: 10px;
+	padding: 0px 0px 0px 0px;
+	/*float: right;*/
+	font-size: 11px;
+}
+
+#menu ul {
+	list-style-type: none;
+	margin: 0 0 0 0;
+	padding: 0;
+	line-height: 110%;
+}
+
+.sideblockTop { /*for first in the list */
+	padding: 20px 10px 5px 10px;
+}
+
+.sideblock {
+	padding: 10px 10px 10px 10px;
+}
+
+.sideblockaddress {
+	padding: 20px 10px 10px 10px;
+}
+
+/*
+ul#links_list ul {
+	margin-left:0px;
+	padding-left:0px;
+}
+*/
+
+ul.sidebar_lists li  {
+	margin-bottom: 3px;
+}
+
+/* for lists with multiple categories */
+
+ul.sidebar_sublists li {  /*spacing of subcategories */
+	margin-bottom: 8px;
+}
+
+ul.sidebar_sublists ul li { /*spacing of list items */
+	margin-bottom: 3px;
+}
+
+#sidebar_togglelist {
+	padding: 0px 0px 0px 0px;
+	margin: 0;
+}
+#classes_list, #venues_list, #headernav_list {
+	display:none;
+	padding: 0px 0px 3px 0px;
+	margin-left:16px;
+}
+
+#classes_list li, #venues_list  li, #headernav_list li {
+	padding: 0;
+	margin-bottom:3px;
+}
+
+
+/* */
+#classes_list li a, #venues_list li a, #headernav_list li a {
+	color: #fff;
+}
+
+#sidebar_togglelist_left, #headernav_togglelist_left { /*2 columns for drop down menus to align text, arrow graphic goes here*/
+	width: 16px;
+	float: left;
+
+	/*
+	border-style:solid;
+	border-color: red;
+	border-width:1px;
+	*/
+}
+
+#sidebar_togglelist_right, #headernav_togglelist_left {
+}
+
+#content {
+	width:100%;
+	float:left;
+/* 	background-color: #ffff; */
+	/* margin: 0px 0px 0px 0px;
+	padding: 16px 16px 16px 24px; */
+}
+
+.post {
+	margin: 0 0px 16px 0;
+	padding: 0;
+	line-height:130%;
+}
+
+.meta { /*has a rule (separator line)*/
+	padding: 10px 0px 20px 0px;
+	margin: 0px 0px 0px 0px;
+	font-size: 10px;
+	border-bottom: 1px solid #d4d4d4;
+}
+
+.metaSearch { /*has a rule (separator line) for spacing at bottom of Search page*/
+	padding: 10px 0px 20px 0px;
+	margin: 0px 0px 16px 0px;
+	font-size: 10px;
+	color: #666666;
+	border-bottom: 1px solid #d4d4d4;
+}
+
+.metaNoRule{ /*no rule under meta data*/
+	padding: 10px 0px 30px 0px;
+	margin: 0px 0px 0px 0px;
+	font-size: 10px;
+	color: #666666;
+}
+
+.searchResult {
+	margin: 15px 0px 0px 0;
+	padding: 0;
+	font-size: 12px;
+	line-height:120%;
+}
+
+.metaNoRuleSearch { /*no rule under meta data*/
+	padding: 5px 0px 5px 0px;
+	margin: 0px 0px 0px 0px;
+	font-size: 10px;
+	color: #666666;
+}
+
+.meta, metaCat, .metaNoRule .metaNoRuleSearch {
+	font-size: 10px;
+	font-weight: bold;
+	color: #666666;
+	line-height:125%;
+}
+
+.meta a, metaCat a, .metaNoRule a, .metaNoRuleSearch a {
+	font-weight: normal;
+}
+
+.storycontent {
+	line-height:130%;
+	padding: 0px 0px 0px 0px;
+	color: #0000;
+}
+
+.continue_link{
+	color: #66cc33;
+	font-size: 11px;
+}
+
+#footer{
+	clear:both;
+	margin: 0px 0px 0px 0px;
+	padding: 5px 0px 20px 0px;
+	color: #999;
+	font-size: 9px;
+}
+
+#footer a { color: #999; }
+
+
+#footer li {
+	list-style-type: none;
+}
+
+#ITPaddress{
+	font-size: 11px;
+	line-height: 140%;
+	padding-left: 20px;
+	padding-top: 60px;
+	padding-bottom: 20px;
+	color: white;
+}
+
+/* general text styles */
+h1 {
+	font-size: 12px;
+}
+
+h1.blogname {
+	font-size: 36px;
+	font-weight: bold;
+	color: #000;
+    letter-spacing: -0.1em;
+}
+
+
+h2 {
+	font-size: 11px;
+	font-weight: bold;
+	margin-top: 3px; margin-bottom: 3px;
+	padding: 0;
+	color: #000;
+}
+
+h2.headernav a {
+	font-size: 11px;
+	font-weight: bold;
+	margin-top: 3px; margin-bottom: 3px;
+	padding: 0;
+	color: #000;
+}
+
+h4 { /*header for archives, category page header pages*/
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	padding-top: 15px;
+	color: #000;
+}
+
+/*
+#content h2 {
+	color: red;
+	margin: 30px 0px 0px 0px;
+}
+*/
+
+h2.postcomment {
+	color: #000;
+}
+
+h3 {
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0 0 2px 0;
+	padding: 0;
+	color: #000;
+}
+
+h3.comment { /*used for headings in comments*/
+	font-size: 11px;
+	margin: 0;
+	color: #000;
+}
+
+h3.comment_extraspacing { /*used for headings in comments*/
+	font-size: 11px;
+	padding-bottom: 10px;
+	color: #000;
+}
+
+h6 {
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0 0 8px 0;
+	padding: 0;
+	color: #000;
+}
+
+h5 { /*header for link categories in the menu)*/
+	font-size: 12px;
+	font-weight: normal;
+	margin: 4px 0 0px 0;
+	padding: 0;
+	color: #000;
+	/*line-height:100%;*/
+}
+
+h3.storytitle {
+	font-size: 21px;
+	letter-spacing: 0em;
+	color: #000;
+	margin: 16px 0 0 0;
+}
+
+h3.storytitleSingle {
+	font-size: 28px;
+	letter-spacing: 0em;
+	text-decoration: none;
+	color: #000;
+	padding: 3px 0 3px 0;
+	margin: 16px 0 0 0;
+}
+
+.projectMeta {
+	margin-top: -50px;
+	float:left;
+	text-align:left;
+	overflow: visible;
+	position: relative;
+	clear:both;
+}
+
+h3.projectTitle {
+	font-size: 28px;
+	letter-spacing: 0em;
+	line-height:1.2em;
+	text-decoration: none;
+	color: #000;
+	padding: 3px 0 3px 0;
+	margin: 0px 0 6px 0;
+}
+
+h3.projectTitlePreview {
+	font-size: 21px;
+	letter-spacing: 0em;
+	text-decoration: none;
+	color: #000;
+	padding: 0;
+	margin: 0;
+}
+
+h3.projectTitlePreview a {
+	font-size: 21px;
+	letter-spacing: 0em;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+
+h3.projectAuthor {
+	font-size: 12.5px;
+	font-weight: bold;
+	letter-spacing: 0em;
+	text-decoration: none;
+	color: #000;
+	padding: 0;
+	margin: 20px 0 6px 0;
+}
+
+h3.projectAuthorPreview {
+	font-size: 12.5px;
+	font-weight: bold;
+	letter-spacing: 0em;
+	text-decoration: none;
+	color: #666666;
+	padding: 0;
+	margin: 10px 0 6px 0;
+}
+
+h3.projectPitch {
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: 0em;
+	text-decoration: none;
+	line-height: 110%;
+	color: #000;
+	padding: 0;
+	margin: 5px 0 10px 0;
+	width: 320px;
+}
+
+h3.projectPitchPreview {
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: 0em;
+	text-decoration: none;
+	color: #000;
+	padding: 0;
+	margin: 5px 0 5px 0;
+}
+
+h3.projectURL {
+	font-size: 12.5px;
+	font-weight: normal;
+	letter-spacing: 0em;
+	text-decoration: none;
+	color: #000;
+	padding: 0;
+	margin: 0 0 0px 0;
+}
+
+h3.projectDB {
+	font-size: 10px;
+	font-weight: normal;
+	letter-spacing: 0em;
+	text-decoration: none;
+	color: #000;
+	padding: 0;
+	margin: 15px 0 15px 0;
+}
+
+.projectImage {
+	padding: 10px 0px 10px 0px;
+}
+
+h3.authorStorytitle {
+	font-size: 16px;
+	letter-spacing: 0em;
+	text-decoration: none;
+	color: #000;
+	padding: 0;
+	margin: 16px 0px 0px 0px;
+}
+
+h3.storytitle a:hover , h3.storytitleSingle a:hover, h3.projectTitlePreview a:hover {  /*color for story title, halfway
+between gallery bg color and text links, which need to be darker for legibility*/
+	color: #000;
+	text-decoration: underline;
+}
+
+h3.storytitle a, h3.storytitleSingle a {  /*color for story title, halfway
+between gallery bg color and text links, which need to be darker for legibility*/
+	/*color: black;*/
+}
+
+#eventsTitle
+{
+        clear: right;
+        font-size: 16px;
+	font-weight: bold;
+        padding-top: 75px;
+}
+
+.eventItem {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+a {
+	color: #66cc33;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #9966cc;
+	text-decoration: underline;
+}
+
+a img { border: none; }
+
+
+/* comment styles */
+
+#commentlist {
+	list-style-type: none;
+	padding: 0;
+	margin: 0px 0 20px 0;
+}
+
+#commentlist li {
+	padding: 0;
+	margin: 15px 0px 0px 0px;
+}
+
+#commentlist li p {
+	margin: 0 0 16px 0;
+}
+
+/* comment form styles */
+
+form#commentform {
+	margin: 16px 0;
+	padding: 0;
+}
+
+form#commentform p {
+	margin: 0 0 4px 0;
+	padding: 0;
+}
+
+input, textarea {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 11px;
+}
+
+input#author, input#email, input#url {
+	border: 1px solid #000;
+}
+
+textarea#comment {
+	border: 1px solid #000;
+	width: 350px;
+}
+
+input#submit {
+	border: 1px solid #000;
+	background-color: #fff;
+}
+
+/* search form styles */
+
+form#searchform {
+	margin: 0;
+	padding: 0;
+}
+
+#searchform input {
+	border: 1px solid #d4d4d4;
+	background-color: #fff;
+	margin-bottom: 4px;
+}
+
+#searchform input#s {
+	width: 100px;
+}
+
+/*hr rules (separator) */
+
+hr.hrblack{
+   border-top: 1px solid #fff;
+   border-bottom: 1px solid #d4d4d4;
+   border-bottom: 1px solid #d4d4d4;
+   border-right: 1px solid #fff;
+   border-left: 1px solid #fff;
+   color: #fff;
+   background-color: #fff;
+   height: 1px;
+}
+
+hr.padded{
+   margin: 10px 0 10px 0;
+   border-top: 1px solid #fff;
+   border-bottom: 1px solid #d4d4d4;
+   border-right: 1px solid #fff;
+   border-left: 1px solid #fff;
+   color: #fff;
+   background-color: #fff;
+   height: 1px;
+}
+
+
+
+hr.hrsingle{
+   border-top: 1px solid #fff;
+   border-bottom: 1px solid #d4d4d4;
+   border-right: 1px solid #fff;
+   border-left: 1px solid #fff;
+   color: #000;
+   background-color: #fff;
+   height: 1px;
+}
+
+
+hr.hrdouble {
+   border-top: 1px solid #d4d4d4;
+   border-bottom: 1px solid #d4d4d4;
+   border-right: 1px solid #fff;
+   border-left: 1px solid #fff;
+   color: #000;
+   background-color: #fff;
+   height: 4px;
+}
+
+table td {
+/* 	[[[[this is the color for the table (student, teacher, class)]]]]]]] */
+	color: #000;
+	padding:6px;
+	margin:0px;
+	width:25%;
+}
+
+
+table tr:hover {
+	background:#b5d1c5;
+}
+
+table tr#headerrow:hover,
+table tr#headerrow a:hover {
+	background:none;
+}
+.highlight {
+	background: #ffff;
+}
+
+.selected_column {
+/* 	background: #ffffcc; */
+}
+
+#mainimage
+{
+	float: right;
+	margin-top: 5px;
+	padding-bottom: 3px;
+}
+
+#titleDivider
+{
+	margin-top: 3px;
+	clear: right;
+	width: 100%;
+	height: 0px;
+	border-top: 1px solid #fff;
+	font-family: times;
+}
+
+#blurb
+{
+	width: 100%;
+	text-align: right;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	float: right;
+	margin-bottom:65px;
+}
+
+#dates
+{
+	width: 100%;
+	text-align: right;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#336699;
+	font-size:14px;
+	float:right;
+}
+
+#projectImage {
+	float:left;
+	width:50%;
+}
+
+#meta_right {
+	float:right;
+	width:40%;
+}
+
+#project a{
+	color:#FF0000;
+	font-size: 12px;
+   	background-color: #57068C;
+	padding:2px;
+	line-height:2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#postcard-image {
+	margin: 0;
+	max-width: 100%;
+	padding: 0;
+	position: relative;
+}

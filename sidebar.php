@@ -1,5 +1,4 @@
 <div id="sidebar">
-  <br>
    <p>
       ITP<br/>
       721 Broadway, 4th Floor<br/>

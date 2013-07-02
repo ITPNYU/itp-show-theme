@@ -20,8 +20,6 @@ Author URI: http://github.com/itpresidents
 
 #sidebar {
 	float:left;
-	position:absolute;
-	top: 100px;
 	left: 8px;
 	width: 125px;
 	color: black;
@@ -31,11 +29,6 @@ Author URI: http://github.com/itpresidents
 	overflow: hidden;
 }
 
-#content
-{
-	margin-left: 150px;
-	font-size: 13px;
-}
 #content .dates { font-weight:bold; }
 #content .external { margin-top: 2em; }
 
@@ -165,14 +158,6 @@ ul.sidebar_sublists ul li { /*spacing of list items */
 #sidebar_togglelist_right, #headernav_togglelist_left {
 }
 
-#content {
-	width:100%;
-	float:left;
-/* 	background-color: #ffff; */
-	/* margin: 0px 0px 0px 0px;
-	padding: 16px 16px 16px 24px; */
-}
-
 .post {
 	margin: 0 0px 16px 0;
 	padding: 0;
@@ -298,13 +283,6 @@ h4 { /*header for archives, category page header pages*/
 	padding-top: 15px;
 	color: #000;
 }
-
-/*
-#content h2 {
-	color: red;
-	margin: 30px 0px 0px 0px;
-}
-*/
 
 h2.postcomment {
 	color: #000;
@@ -714,8 +692,17 @@ table tr#headerrow a:hover {
 
 
 
+#sidebar{
+	margin: 0;
+	padding: 0px 20px 40px 20px;
+}
 
-
+#content {
+	margin-top: 0px;
+	padding: 0px 0px 0px 0px;
+	width: 1000px;
+	float: left;
+}
 
 #postcard-image,
 #banner-image {

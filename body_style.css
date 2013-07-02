@@ -1,19 +1,16 @@
 html body{
 	font-family: Arial, sans-serif;
 	font-size: 12px;
-	width: 990px; 
-	background-color: #ffffff;
-
-	background-repeat:no-repeat;
+	background: #ffffff;
 }
 
 a {color: #84878c;  font-weight: bold; }
 a:hover{color:#9966cc; background: none; text-decoration:underline;}
 a.home_button{
-	color:#fff; 
+	color:#fff;
 	font-size: 12px;
    	background-color: #57068C;
-	padding:2px; 
+	padding:2px;
 	line-height:2em;
 }
 a.projectlink
@@ -36,63 +33,55 @@ background:#9966cc;
 font-size: 12px;
 }
 
-
-
-
-#sidebar { float:left; 	position:absolute; top: 0; left: 0; width: 150px; background-color: #fffff; font-size: 10px; margin: 0; padding: 0 0 0 0; overflow: hidden; }
-#content { margin-left: 160px; width: 1000px; font-size: 13px;}<!-- CONTENT WIDTH ADJUSTMENT (was 750)-->
 .header { margin-left: 160px; width: 740px; }
-
-#sidebar{margin-top: 32px; padding: 0px 20px 40px 20px;}
-#content{margin-top: 0px; padding: 0px 0px 0px 0px;}
 
 .header1 {
   margin:0;
   margin-top:32px;
-  padding: 0;             
+  padding: 0;
   text-align:center;
-  font-weight: bold;      
+  font-weight: bold;
   font-size: 48px;
   letter-spacing: -.25px;
-  line-height: 48pt;    
+  line-height: 48pt;
    color: #57068C;
 }
 
 .header2 {
-  font-size: 24px;      
-  font-weight: bold;      
+  font-size: 24px;
+  font-weight: bold;
   letter-spacing: -.25px;
   line-height: 24px;
   text-align:center;
   color: #57068C;
   margin:0;
-  padding: 0px 0px 0px 0px;             
+  padding: 0px 0px 0px 0px;
 }
 
 #venuesNames a {
 /* background-color: #b5d1c5; */
-	color: #57068C;  
-	font-weight: bold; 
+	color: #57068C;
+	font-weight: bold;
 }
 
 #venuesNames a:
  {
 /* 	color:#57068C;  */
-	
+
 	text-decoration:underline;
 }
 
 #venuesNames {
-width: 900px; 
+width: 900px;
 /*   color: #ffffff; */
-background-color:#fff; 
-  font-size: 12px; 
-  //font-weight: bold;      
+background-color:#fff;
+  font-size: 12px;
+  //font-weight: bold;
   //letter-spacing: -.25px;
   line-height: 24px;
   text-align:right;
   margin:0;
-  padding: 20px 0px 0px 0px; 
+  padding: 20px 0px 0px 0px;
 }
 
 
@@ -165,7 +154,7 @@ table{
 	border:0;
 	font-size:.9em;
 	padding-bottom:25px;
-		
+
 }
 
 table td {
@@ -203,13 +192,13 @@ table tr#headerrow:hover 	{background-color:#fff;}
 	height:429px;
 	margin:5px;
 	padding-top:4px;
-	padding-left:4px; 
+	padding-left:4px;
 	align:center;
 /*  	background-color: #ffff; */
 }
 #img_layer img {
 	margin:0;
-	padding-left:2px; 
+	padding-left:2px;
 /*  	background-color: #ffff; */
         align:auto;
 }
@@ -243,16 +232,16 @@ table tr#headerrow:hover 	{background-color:#fff;}
 #info_layer1 {
 	margin-top:10px;
 	padding:0px;
-  font-size: 14px;      
-  font-weight: bold;      
+  font-size: 14px;
+  font-weight: bold;
   text-align:center;
   color: #0000;
 }
 #info_layer2 {
 	margin-top:2px;
 	padding:0px;
-  font-size: 24px;      
-  font-weight: bold;      
+  font-size: 24px;
+  font-weight: bold;
   letter-spacing: -.25px;
   line-height: 24px;
   text-align:center;
